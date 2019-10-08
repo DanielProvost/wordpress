@@ -76,7 +76,7 @@ if( $current_options['home_testimonial_section_enabled']=='on' ) { ?>
 					<div class="col-md-12 pull-left item <?php if( $t == true ){ echo 'active'; } $t = false; ?>">
 						<div class="post"> 
 							<?php $default_arg =array('class' => "img-circle"); ?>
-                            <img src="wp-content/themes/busiprofChild/images/default/cv.jpg" class="img_cv" alt="img cv">
+                            <img src="wp-content/themes/busiprofChild/images/default/cv.jpg" class="img_cv" alt="img cv" id="anchor">
 							
 							<div class="entry-content">
 								<p><?php echo $test_desc; ?></p>
