@@ -6,6 +6,18 @@ Author URI: danielprovost.fr
 Template: busiprof
 Version: 0.1.0
 */
+.slides{
+    height: 400px;
+}
+.slides img{
+    height:400px!important;
+    position: center;
+    max-width: 1200%;
+}
+li{
+    display: flex;
+    justify-content: center;
+}
 .logo_imgae{
     width:115px!important;
     height: auto!important;
@@ -23,7 +35,7 @@ Version: 0.1.0
 .slide-caption{
     width:700px!important;
   background-color: unset!important;
-    left: 27% !important;
+    left: 25% !important;
     text-align: center!important;
 }
 h2{
@@ -42,14 +54,14 @@ h2{
 }
 @media(max-width:1250px){
     h2{
-        font-size: 2.8em!important;
+        margin-top: -10% !important;
     }
     .slide-caption p{
         font-size: 1.3em!important;
     }
     .slide-caption{
-        width:500px!important;
-        left: 23% !important;
+        /*width:600px!important;*/
+        left: 20% !important;
     }
 }
 @media(max-width:1000px){
@@ -57,34 +69,43 @@ h2{
         margin-left:29%;
     }
     .slide-caption{
+        width:500px!important;
+
         height:100px !important;
-        /*left: 20% !important;*/
+        left: 15% !important;
     }
-    .slide-caption p{
-        display: none;
-    }
-    h2{
-        line-height: 1em!important;
-    }
+
 }
 @media(max-width:800px){
     .img_cv{
-        margin-left:23%;
+        margin-left:10% !important;
+    }
+    .slide-caption p{
+        line-height: 1.5em!important;
+    }
+    h2{
+        color: black!important;
+        font-size: 3.5em!important;
+        line-height: 1.2em!important;
     }
     .slide-caption{
-       width:250px!important;
-        left: 30% !important;
-    }
-    .slide-caption h2{
-        font-size: 25px!important;
-        line-height: 30px!important;
+        left: 10% !important;
     }
 }
 @media(max-width:480px){
+    h2{
+        color: black!important;
+        font-size: 2.4em!important;
+        line-height: 1.2em!important;
+    }
     .img_cv{
         margin-left:2%;
     }
     .slide-caption {
         left:15%!important;
+        max-width: 350px!important;
+    }
+    .slides{
+        height: 400px;
     }
 }
