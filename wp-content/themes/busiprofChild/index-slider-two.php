@@ -12,7 +12,12 @@ if( $current_options['home_banner_strip_enabled'] == 'on' && $current_options['s
 					<div class="container">
 						<div class="slide-caption">
 							<?php if($current_options['caption_head']!='') {?>
-							<h2><?php echo esc_html($current_options['caption_head']); ?></h2>
+							<h2>
+                                <?php $listeTitre = explode(' ', $current_options['caption_head']); ?>
+                                <span class="titrePage"><?php echo esc_html($listeTitre[0]); ?></span>
+                                <br/>
+                                <span class="titrePage"><?php echo esc_html($listeTitre[1]) .  ' ' . esc_html($listeTitre[2]); ?></span>
+                            </h2>
 							<?php } if($current_options['caption_text']!='') {?>
 							<p><?php echo esc_html($current_options['caption_text']); ?></p>
 							<?php } ?>	

@@ -5,7 +5,7 @@ if( $current_options['home_project_section_enabled'] == 'on' ) {
 ?>
 <!-- Portfolio Section -->
 <section id="section" class="portfolio bg-color">
-	<div class="container smart-popin" id="portfolio" >
+	<div class="container" id="portfolio" >
 		<!-- Section Title -->
 		<div class="row">
 			<div class="col-md-12">
