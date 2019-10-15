@@ -1,0 +1,2 @@
+INSERT INTO information_schema.SCHEMATA (CATALOG_NAME, SCHEMA_NAME, DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME, SQL_PATH) VALUES ('def', 'information_schema', 'utf8', 'utf8_general_ci', null);
+INSERT INTO information_schema.SCHEMATA (CATALOG_NAME, SCHEMA_NAME, DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME, SQL_PATH) VALUES ('def', 'wordpress_portfolio', 'latin1', 'latin1_swedish_ci', null);

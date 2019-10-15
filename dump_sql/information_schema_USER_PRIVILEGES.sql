@@ -1,0 +1,1 @@
+INSERT INTO information_schema.USER_PRIVILEGES (GRANTEE, TABLE_CATALOG, PRIVILEGE_TYPE, IS_GRANTABLE) VALUES ('''danielProvost''@''localhost''', 'def', 'USAGE', 'NO');

@@ -32,7 +32,7 @@ if(empty($testimonial_options)){
 if( $current_options['home_testimonial_section_enabled']=='on' ) { ?>
 <!-- Additional Section Two - Testimonial Scroll -->
 <section id="section" class="testimonial-scroll bg-color">
-	<div class="container">
+	<div class="container" id="contact">
 			
 			<!-- Section Title -->
 			<div class="row">

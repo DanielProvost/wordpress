@@ -38,6 +38,15 @@ li{
     left: 25% !important;
     text-align: center!important;
 }
+.slide-caption p::before{
+    content: '! ' !important;
+    color: #1a8e27;
+}
+.slide-caption p::after{
+    content: '! ' !important;
+    color: #1a8e27;
+}
+
 h2{
     color: black!important;
     font-size: 4em!important;
@@ -69,7 +78,7 @@ h2{
         margin-left:29%;
     }
     .slide-caption{
-        width:500px!important;
+        width:550px!important;
 
         height:100px !important;
         left: 15% !important;
@@ -107,5 +116,17 @@ h2{
     }
     .slides{
         height: 400px;
+    }
+    .smart-popin{
+        position: fixed;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background-color: rgba(250, 83, 31, 0.5);
+        overflow: auto;
+        width: 66.66%;
+        min-width: 300px;
+
+        margin: 0 auto;
+        opacity: 0;
     }
 }
