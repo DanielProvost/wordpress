@@ -37,23 +37,23 @@ get_template_part('index', 'bannerstrip');
 				</div>
 				<!--/End of Blog Detail-->
 
-			<?php 
+			<?php
 				if ( class_exists( 'WooCommerce' ) ) {
-					
+
 					if( is_account_page() || is_cart() || is_checkout() ) {
-							get_sidebar('woocommerce'); 
+							get_sidebar('woocommerce');
 					}
-					else{ 
-				
-					get_sidebar(); 
-					
+					else{
+
+					get_sidebar();
+
 					}
-					
+
 				}
-				else{ 
-				
-					get_sidebar(); 
-					
+				else{
+
+					get_sidebar();
+
 					} ?>
 			</div>
 	</div>

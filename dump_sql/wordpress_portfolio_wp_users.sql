@@ -1,1 +1,0 @@
-INSERT INTO wordpress_portfolio.wp_users (ID, user_login, user_pass, user_nicename, user_email, user_url, user_registered, user_activation_key, user_status, display_name) VALUES (1, 'danielProvost', '$P$BBjHgyQGvMAW.5qXWXpzvzIpG.YEc./', 'danielprovost', 'dprovost67@gmail.com', '', '2019-10-01 08:00:06', '', 0, 'danielProvost');

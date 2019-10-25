@@ -47,9 +47,13 @@ if( $current_options['home_project_section_enabled'] == 'on' ) {
                                     <div id="openModal" class="modalDialog">
                                         <div>
                                             <a href="#close" title="Close" class="close">X</a>
-                                            <h2>Modal Box</h2>
-                                            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
-                                            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+                                            <h2 style = 'text-align: center; margin-bottom : 5%;'>Hanami</h2>
+                                                <div style ='display: flex; justify-content: center; flex-wrap:wrap;'>
+                                                    <img src="wp-content/themes/busiprofChild/images/hanami1.png" alt="" style="width:300px; margin-left:5%; margin-bottom:5%" >
+                                                    <img src="wp-content/themes/busiprofChild/images/mayuko2.png" alt="" style="width:300px; margin-left:5%; margin-bottom:5%">
+                                                    <img src="wp-content/themes/busiprofChild/images/mayuko3.png" alt="" style="width:300px; margin-left:5% ;margin-bottom:5%">
+
+                                                </div>
                                         </div>
                                     </div>
 <!--								--><?php //if($current_options['project_one_url']!='') {?>

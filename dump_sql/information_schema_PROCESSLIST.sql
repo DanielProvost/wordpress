@@ -1,1 +1,0 @@
-INSERT INTO information_schema.PROCESSLIST (ID, USER, HOST, DB, COMMAND, TIME, STATE, INFO) VALUES (491, 'danielProvost', 'localhost:55872', 'information_schema', 'Query', 0, 'executing', '/* ApplicationName=PhpStorm 2019.2.3 */ SELECT t.* FROM information_schema.PROCESSLIST t');
