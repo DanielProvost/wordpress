@@ -25,7 +25,7 @@ define( 'DB_NAME', 'wordpress_portfolio' );
 define( 'DB_USER', 'danielProvost' );
 
 /** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', '1234' );
+define( 'DB_PASSWORD', 'Aurelie12$' );
 
 /** Adresse de l’hébergement MySQL. */
 define( 'DB_HOST', 'localhost' );

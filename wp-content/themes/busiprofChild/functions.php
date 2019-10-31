@@ -13,3 +13,10 @@ var_dump($current_options );*/
 
 
 
+function monJavascript()
+{
+
+    // Déclarer le JS
+    wp_enqueue_script('capitaine', get_stylesheet_directory_uri()  .'/js/script.js',array() );
+}
+add_action( 'wp_footer', 'monJavascript' );

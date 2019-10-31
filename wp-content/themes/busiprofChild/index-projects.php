@@ -46,25 +46,17 @@ if( $current_options['home_project_section_enabled'] == 'on' ) {
 
                                     <div id="openModal" class="modalDialog">
                                         <div>
-                                            <a href="#close" title="Close" class="close">X</a>
-                                            <h2 style = 'text-align: center; margin-bottom : 5%;'>Hanami</h2>
-                                                <div style ='display: flex; justify-content: center; flex-wrap:wrap;'>
-                                                    <img src="wp-content/themes/busiprofChild/images/hanami1.png" alt="" style="width:300px; margin-left:5%; margin-bottom:5%" >
-                                                    <img src="wp-content/themes/busiprofChild/images/mayuko2.png" alt="" style="width:300px; margin-left:5%; margin-bottom:5%">
-                                                    <img src="wp-content/themes/busiprofChild/images/mayuko3.png" alt="" style="width:300px; margin-left:5% ;margin-bottom:5%">
+                                         <a href="#close" title="Close" class="close">Fermer</a>
+                                          <h2 class='hanamiH2'>Hanami</h2>
+                                              <div style ='display: flex; justify-content: center; flex-wrap:wrap;'>
+                                                   <img src="wp-content/themes/busiprofChild/images/mayuko1.png" alt="" class="hanamiStyle" >
+                                                  <img src="wp-content/themes/busiprofChild/images/mayuko2.png" alt="" class="hanamiStyle">
+                                                   <img src="wp-content/themes/busiprofChild/images/mayuko3.png" alt="" class="hanamiStyle">
 
-                                                </div>
-                                        </div>
-                                    </div>
-<!--								--><?php //if($current_options['project_one_url']!='') {?>
-<!--								<a href="--><?php //echo esc_url($current_options['project_one_url']); ?><!--">-->
-<!--								--><?php //}
-//								if($current_options['project_title_one']!='') {
-//								echo esc_html($current_options['project_title_one']); ?>
-<!--								--><?php //} ?>
-<!--								--><?php //if($current_options['project_one_url']!='') {?>
-<!--								</a>-->
-<!--								--><?php //} ?>
+                                              </div>
+                                       </div>
+                                   </div>
+
 								</h4>
 							</div>
 							<div class="entry-content">
@@ -91,15 +83,20 @@ if( $current_options['home_project_section_enabled'] == 'on' ) {
 						<div class="portfolio-info">
 							<div class="entry-header">
 								<h4 class="entry-title">
-								<?php if($current_options['project_two_url']!='') {?>
-								<a href="<?php echo esc_url($current_options['project_two_url']); ?>">
-								<?php }
-								if($current_options['project_title_two']!='') {
-								echo esc_html($current_options['project_title_two']); ?>
-								<?php }
-								 if($current_options['project_two_url']!='') {?>
-								</a>
-								<?php } ?>
+                                    <a href="#openModal1">Alumni</a>
+
+                                    <div id="openModal1" class="modalDialog">
+                                        <div>
+                                            <a href="#close" title="Close" class="close">Fermer</a>
+                                            <h2 class='hanamiH2'>Alumni</h2>
+                                            <div style ='display: flex; justify-content: center; flex-wrap:wrap;'>
+
+                                                <img src="wp-content/themes/busiprofChild/images/alumni.png" alt="" class="hanamiStyle"  >
+
+                                            </div>
+                                        </div>
+                                    </div>
+
 								</h4>
 							</div>
 							<div class="entry-content">
@@ -127,15 +124,20 @@ if( $current_options['home_project_section_enabled'] == 'on' ) {
 							<div class="entry-header">
 								
 								<h4 class="entry-title">
-								<?php if($current_options['project_three_url']!='') {?>
-								<a href="<?php echo esc_url($current_options['project_three_url']); ?>">
-								<?php }
-								if($current_options['project_title_three']!='') {
-								echo esc_html($current_options['project_title_three']); ?>
-								<?php }
-								 if($current_options['project_three_url']!='') {?>
-								</a>
-								<?php }?>
+                                    <a href="#openModal2">Calendrier</a>
+
+                                    <div id="openModal2" class="modalDialog">
+                                        <div>
+                                            <a href="#close" title="Close" class="close">Fermer</a>
+                                            <h2 class='hanamiH2'>Calendrier Javascript</h2>
+                                            <div style ='display: flex; justify-content: center; flex-wrap:wrap;'>
+
+                                                <img src="wp-content/themes/busiprofChild/images/calendrier.png" alt="" class="hanamiStyle">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
 								</h4>
 							</div>
 							<div class="entry-content">
@@ -162,15 +164,21 @@ if( $current_options['home_project_section_enabled'] == 'on' ) {
 						<div class="portfolio-info">
 							<div class="entry-header">
 								<h4 class="entry-title">
-								<?php if($current_options['project_four_url']!='') {?>
-								<a href="<?php echo esc_url($current_options['project_four_url']); ?>">
-								<?php }
-								if($current_options['project_title_four']!='') {
-								echo esc_html($current_options['project_title_four']); ?>
-								<?php } ?>
-								<?php if($current_options['project_four_url']!='') {?>
-								</a>
-								<?php } ?>
+                                    <a href="#openModal3">Webagency</a>
+
+                                    <div id="openModal3" class="modalDialog">
+                                        <div>
+                                            <a href="#close" title="Close" class="close">Fermer</a>
+                                            <h2 class='hanamiH2'>Webagency</h2>
+                                            <div style ='display: flex; justify-content: center; flex-wrap:wrap;'>
+
+                                                <img src="wp-content/themes/busiprofChild/images/webagency1.png" alt="" class="hanamiStyle">
+                                                <img src="wp-content/themes/busiprofChild/images/webagency2.png" alt="" class="hanamiStyle"">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
 								</h4>
 							</div>
 							<div class="entry-content">

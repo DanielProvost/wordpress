@@ -15,6 +15,11 @@ Version: 0.1.0
 .wp-block-preformatted{
     text-align: center;
 }
+
+/*
+boîte modale
+ */
+
 .modalDialog {
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
@@ -37,48 +42,95 @@ Version: 0.1.0
 }
 
 .modalDialog > div {
-    width: 90vw;
-    height: 60vh;
+    width: 80vw;
+    height: 80vh;
     position: relative;
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
     background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
+    background: -moz-linear-gradient(#fff, #0e996b);
+    background: -webkit-linear-gradient(#fff, #0e996b);
+    background: -o-linear-gradient(#fff, #0e996b);
+    overflow: scroll;
 }
 
 .close {
+    padding :5px;
     background: #606061;
     color: #FFFFFF;
     line-height: 25px;
     position: absolute;
-    right: -12px;
+    right: 10px;
     text-align: center;
-    top: -10px;
-    width: 24px;
+    top: 10px;
+    width: 80px;
     text-decoration: none;
-    font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000;
+    font-weight: lighter;
+    /*-webkit-border-radius: 12px;*/
+    /*-moz-border-radius: 12px;*/
+    /*border-radius: 12px;*/
+    /*-moz-box-shadow: 1px 1px 3px #000;*/
+    /*-webkit-box-shadow: 1px 1px 3px #000;*/
+    /*box-shadow: 1px 1px 3px #000;*/
 }
 
-.close:hover { background: #00d9ff; }
+.close:hover { background: #f6ffff; }
+
+.hanamiStyle{
+    width:500px; margin-left:5%; margin-bottom:5%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+}
+.hanamiH2{
+    text-align: center;
+    margin-bottom : 5%;
+    margin-top:2%;
+    text-shadow: 1px 1px;
+}
+/*fin boite modale*/
+
+/*debut svg*/
+svg{
+    background-color: #F7F7F7;
+}
+.transformSVG{
+    transform: rotate(45deg);
+}
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.3;
+    }
+
+    60%{
+        opacity: 0.6;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+.opacity{
+    animation: opacity 8s ease forwards;
+}
+
+/*fin svg*/
+
 .slides{
     height: 400px;
 }
 .slides img{
     height:400px!important;
     position: center;
+    /*width: 100vw;*/
     max-width: 1200%;
+    margin-left: 5%;
 }
+
 .logo_imgae{
-    width:115px!important;
+    width:150px!important;
     height: auto!important;
     margin-top:10% !important;
 }
@@ -94,7 +146,7 @@ Version: 0.1.0
 .slide-caption {
     width: 760px !important;
     background-color: unset !important;
-    left: 26% !important;
+    left: 32% !important;
     text-align: center !important;
     display: flex;
     flex-direction: column;
@@ -133,14 +185,26 @@ h2{
     align-self: center;
     box-shadow: 3px 3px #e9c932;
 }
+@media (max-width: 1500px) {
 
+    svg{
+        transform: translateX(-180px) ;
+    }
+
+}
 @media(max-width:1250px){
+    svg{
+        transform: translateX(-500px) ;
+    }
+    .slides img{
+        margin-left: 0;
+    }
     .page-title{
         padding-top: 10%;
     }
-    h2{
-        margin-top: -10% !important;
-    }
+    /*h2{*/
+    /*    margin-top: -10% !important;*/
+    /*}*/
     .slide-caption{
         left: 15% !important;
     }
@@ -151,6 +215,9 @@ h2{
     }
 }
 @media(max-width:1000px){
+    svg{
+        transform: translateX(-600px) ;
+    }
     .page-title{
         padding-top: 0;
     }
@@ -166,8 +233,11 @@ h2{
     }
 }
 @media(max-width:800px){
+    .hanamiStyle{
+        width:400px; margin-left:5%; margin-bottom:5%
+    }
     .img_cv{
-        margin-left:10% !important;
+        margin-left:28% !important;
     }
     h2{
         color: black!important;
@@ -182,6 +252,9 @@ h2{
     }
 }
 @media(max-width:480px){
+    .hanamiStyle{
+        width:300px; margin-left:5%; margin-bottom:5%
+    }
     .formulaire{
         margin-left: 3%;
     }
@@ -191,7 +264,7 @@ h2{
         line-height: 1.2em!important;
     }
     .img_cv{
-        margin-left:2%;
+        margin-left:2%!important;
     }
     .slide-caption {
         max-width: 380px!important;
@@ -204,6 +277,23 @@ h2{
     }
     .slides{
         height: 400px;
+    }
+    .titrePage:first-child{
+        top:-40% !important;
+        font-size: 1.6em!important;
+    }
+    .titrePage{
+        padding: 6px 14px!important;
+        margin-left: -8%;
+    }
+    .slide-caption p{
+        margin-top: 20%;
+        margin-left: -8%!important;
+        max-width: 200px!important;
+        padding: 9px;
+        font-style: unset;
+        letter-spacing: 0;
+        line-height: 18px!important;
     }
 
 }
