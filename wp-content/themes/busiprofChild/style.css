@@ -35,7 +35,10 @@ boîte modale
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
-
+.gold{
+    stroke : gold;
+    fill : gold;
+}
 .modalDialog:target {
     opacity:1;
     pointer-events: auto;
@@ -82,7 +85,7 @@ boîte modale
 .close:hover { background: #f6ffff; }
 
 .hanamiStyle{
-    width:500px; margin-left:5%; margin-bottom:5%;
+    width:500px; height: auto; margin-left:5%; margin-bottom:5%;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
 }
 .hanamiH2{
@@ -238,7 +241,7 @@ h2{
 }
 @media(max-width:800px){
     .hanamiStyle{
-        width:400px; margin-left:5%; margin-bottom:5%
+        width:400px; height: auto; margin-left:5%; margin-bottom:5%
     }
     .img_cv{
         margin-left:28% !important;
@@ -257,7 +260,7 @@ h2{
 }
 @media(max-width:480px){
     .hanamiStyle{
-        width:300px; margin-left:5%; margin-bottom:5%
+        width:300px; height:auto; margin-left:5%; margin-bottom:5%
     }
     .formulaire{
         margin-left: 3%;

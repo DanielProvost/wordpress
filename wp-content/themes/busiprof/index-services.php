@@ -65,34 +65,34 @@ if(empty($busiprof_service_content)){
 
 $current_options = wp_parse_args(  get_option( 'busiprof_theme_options', array() ), theme_setup_data() ); ?>
 <section id="section" class="service">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-title">
-					<?php if( $current_options['service_heading_one'] != '' ) { ?>
-					<h1 class="section-heading"><?php echo $current_options['service_heading_one']; ?></h1>
-					<?php } if( $current_options['service_tagline'] != '' ) { ?>
-					<p><?php echo $current_options['service_tagline']; ?></p>
-					<?php } ?>
-				</div>
-			</div>
-		</div>
-		<?php busiprof_service_content( $busiprof_service_content ); ?>
-		<div class="clearfix"></div>
-			<div class="col-md-12 col-xs-12">
-				<div class="btn-wrap">
-					<div class="services_more_btn">
-						<?php if($current_options['service_link_btn']!='') {?>
-						<a href="<?php echo esc_url($current_options['service_link_btn']); ?>">
-					   <?php } if($current_options['service_button_value']!='') { 
-					   echo esc_html($current_options['service_button_value']); ?></a>
-					   <?php } ?>	
-					</div>
-				</div>
-			</div>
-		</div>
-</section>	
-		
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <?php if( $current_options['service_heading_one'] != '' ) { ?>
+                        <h1 class="section-heading"><?php echo $current_options['service_heading_one']; ?></h1>
+                    <?php } if( $current_options['service_tagline'] != '' ) { ?>
+                        <p><?php echo $current_options['service_tagline']; ?></p>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+        <?php busiprof_service_content( $busiprof_service_content ); ?>
+        <div class="clearfix"></div>
+        <div class="col-md-12 col-xs-12">
+            <div class="btn-wrap">
+                <div class="services_more_btn">
+                    <?php if($current_options['service_link_btn']!='') {?>
+                    <a href="<?php echo esc_url($current_options['service_link_btn']); ?>">
+                        <?php } if($current_options['service_button_value']!='') {
+                        echo esc_html($current_options['service_button_value']); ?></a>
+                <?php } ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 /**
  * Get content for features section.
